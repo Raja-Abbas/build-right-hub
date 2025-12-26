@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ProblemSection from "@/components/ProblemSection";
+import BenefitsSection from "@/components/BenefitsSection";
+import SurveySection from "@/components/SurveySection";
+import Footer from "@/components/Footer";
+import InterestForm from "@/components/InterestForm";
 
 const Index = () => {
+  const [formOpen, setFormOpen] = useState(false);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header onOpenForm={() => setFormOpen(true)} />
+      
+      <main className="pt-16">
+        <Hero onOpenForm={() => setFormOpen(true)} />
+        <ProblemSection />
+        <BenefitsSection />
+        <SurveySection />
+      </main>
+      
+      <Footer />
+      
+      <InterestForm open={formOpen} onOpenChange={setFormOpen} />
     </div>
   );
 };
