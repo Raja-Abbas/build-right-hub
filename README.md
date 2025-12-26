@@ -1,48 +1,107 @@
-**Use your preferred IDE**
+# Sanitary & Washroom Materials — Market Validation MVP
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+A **market validation MVP** built to assess demand, user intent, and real-world pain points in the **sanitary, plumbing, and washroom materials** space.
+This project focuses on **idea validation and user research** before investing in a full-scale product or marketplace.
 
-Follow these steps:
+The goal is simple:
+**Understand what contractors, builders, plumbers, and homeowners actually want.**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+---
+
+## 🚀 Purpose
+
+This project exists to validate:
+
+* Demand for a **sanitary and plumbing materials platform**
+* Common sourcing and procurement pain points
+* User priorities (price, quality, availability, delivery, trust)
+* Willingness to adopt a digital solution
+
+This is a **lean startup MVP**, not a finished product.
+
+**No payments. No marketplace. No fake traction. Just signal.**
+
+---
+
+## 🧠 What This MVP Does
+
+* Presents a focused **landing page** explaining the problem space
+* Captures **user intent** via structured forms
+* Collects **qualitative insights** through embedded surveys
+* Helps determine **problem–solution fit** before building further
+
+---
+
+## 🏗️ Target Audience
+
+* Contractors
+* Builders & developers
+* Plumbers
+* Architects
+* Homeowners involved in construction or renovation
+
+---
+
+## 🛠️ Tech Stack
+
+This project is built with modern, production-ready tooling:
+
+* **Vite**
+* **TypeScript**
+* **React**
+* **Tailwind CSS**
+* **shadcn/ui**
+
+---
+
+## 📦 Getting Started (Local Development)
+
+### Prerequisites
+
+* Node.js (recommended via **nvm**)
+* npm
+
+### Installation Steps
+
+```bash
+# Step 1: Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Step 2: Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Step 3: Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The app will start with auto-reloading and instant preview.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📊 What Success Looks Like
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This MVP helps answer:
+
+* Do people want this?
+* Who wants it the most?
+* What problem is worth solving first?
+* Is this idea worth scaling or killing?
+
+If it doesn’t generate clear intent and insights, the idea doesn’t move forward.
+
+---
+
+## ⚠️ Scope Disclaimer
+
+This repository is intentionally limited:
+
+* No payments
+* No authentication
+* No marketplace
+* No dashboards
+
+It is a **validation experiment**, not a finished SaaS.
