@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProblemSection from "@/components/ProblemSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import { ShopSection } from "@/components/ShopSection";
 import SurveySection from "@/components/SurveySection";
 import Footer from "@/components/Footer";
 import InterestForm from "@/components/InterestForm";
@@ -18,6 +19,7 @@ const Index = () => {
         <Hero onOpenForm={() => setFormOpen(true)} />
         <ProblemSection />
         <BenefitsSection />
+        <ShopSection />
         <SurveySection />
       </main>
       
