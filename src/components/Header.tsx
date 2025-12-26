@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { CartDrawer } from "./CartDrawer";
 
 interface HeaderProps {
   onOpenForm: () => void;
@@ -20,14 +21,14 @@ const Header = ({ onOpenForm }: HeaderProps) => {
 
           <nav className="hidden md:flex items-center gap-8">
             <a 
-              href="#problem" 
+              href="#shop" 
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector('.bg-card')?.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('shop')?.scrollIntoView({ behavior: 'smooth' });
               }}
             >
-              The Problem
+              Shop
             </a>
             <a 
               href="#survey" 
@@ -41,9 +42,12 @@ const Header = ({ onOpenForm }: HeaderProps) => {
             </a>
           </nav>
 
-          <Button onClick={onOpenForm} size="sm">
-            Join Early Access
-          </Button>
+          <div className="flex items-center gap-3">
+            <CartDrawer />
+            <Button onClick={onOpenForm} size="sm">
+              Join Early Access
+            </Button>
+          </div>
         </div>
       </div>
     </header>
